@@ -35,3 +35,5 @@ SnapTalk combines the essence of a social media feed with the interactivity of m
 **Authentication:** JWT & Bcrypt  
 **Payments (future):** Razorpay/Stripe  
 
+
+**Project Link** - https://snaptalk-q73h.onrender.com/
