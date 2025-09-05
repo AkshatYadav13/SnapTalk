@@ -8,7 +8,7 @@ export function useGetSuggestedUser(){
 
     async function fetchSuggestedUser() {
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/user/suggested`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/user/suggested`,{
                 method:'get',
                 credentials:'include'
             })

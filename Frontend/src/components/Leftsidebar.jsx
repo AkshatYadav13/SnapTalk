@@ -64,7 +64,7 @@ const Leftsidebar = () => {
 
     async function logoutHandler(){
       try {
-        const res = await fetch(`http://localhost:8000/api/v1/user/logout`,{
+        const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/user/logout`,{
             method:'Get',
             credentials:'include'
         })

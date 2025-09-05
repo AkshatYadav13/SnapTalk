@@ -40,7 +40,7 @@ const SetProfile = () => {
 
         try {
             setloading(true)
-            const res = await fetch(`http://localhost:8000/api/v1/user/edit/${userId}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/user/edit/${userId}`,{
                 method:'Post',
                 credentials:'include',
                 body:formData,

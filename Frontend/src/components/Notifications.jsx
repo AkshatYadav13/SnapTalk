@@ -40,7 +40,7 @@ const Notifications = () => {
             arr.push(nId)
         }
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/notification/delete`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/notification/delete`,{
                 method:'post',
                 credentials:'include',
                 body:JSON.stringify({notificationIds:arr}),
@@ -67,7 +67,7 @@ const Notifications = () => {
             notificationId
         }
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/notification/friendReq/acceptOrReject/${senderId}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/notification/friendReq/acceptOrReject/${senderId}`,{
                 method:'POST',
                 credentials:'include',
                 body:JSON.stringify(info),
@@ -98,7 +98,7 @@ const Notifications = () => {
 
     async function updateStatus(){
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/notification/updateStatus/${activeTab}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/notification/updateStatus/${activeTab}`,{
                 method:'get',
                 credentials:'include',
             })

@@ -10,7 +10,7 @@ export function useUpdateGrpMsgStatus(groupId){
 
     async function updateGrpMsgStatus() {
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/group/msgs/status/update/${groupId}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/msgs/status/update/${groupId}`,{
                 method:'POST',
                 credentials:'include',
                 body: JSON.stringify({'msgIds':grpUnseenMsgIds }),

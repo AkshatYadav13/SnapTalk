@@ -11,7 +11,7 @@ export function useUpdateMsgStatus(){
 
     async function updateMsgStatus() {
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/message/update/status/${selectedUser._id}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/message/update/status/${selectedUser._id}`,{
                 method:'POST',
                 credentials:'include',
                 body: JSON.stringify({unseenMsgIds }),

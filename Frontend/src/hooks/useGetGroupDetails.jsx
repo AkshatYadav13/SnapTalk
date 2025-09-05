@@ -12,7 +12,7 @@ export  function useGetGroupDetails(groupID) {
 
     async function fetchGroupDetails(){
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/group/get/${groupID}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/get/${groupID}`,{
                 method:'get',
                 credentials:'include',
             })

@@ -32,7 +32,7 @@ const CommentDialog = ({ open, setOpen, post }) => {
         'message':text
     }
     try {
-        const res = await fetch(`http://localhost:8000/api/v1/post/addComment/${post._id}`,{
+        const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/post/addComment/${post._id}`,{
             method:'POST',
             credentials:'include',
             body:JSON.stringify(input),

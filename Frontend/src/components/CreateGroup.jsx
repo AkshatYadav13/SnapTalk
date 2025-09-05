@@ -65,7 +65,7 @@ const CreateGroup = () => {
             formData.append('memberIds',input?.memberIds)
             setLoading(true)
             try {
-                const res = await fetch(`http://localhost:8000/api/v1/group/create`,{
+                const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/create`,{
                     method:'Post',
                     credentials:'include',
                     body:formData

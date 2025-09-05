@@ -71,7 +71,7 @@ const GroupInfo = ({setOpenGrpInfo,closeChatView}) => {
     // api calls
     async function addMemberHandler() {
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/group/addMember/${selectedGroup._id}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/addMember/${selectedGroup._id}`,{
                 method:'post',
                 credentials:'include',
                 body:JSON.stringify({'userEmail':inputEmail}),
@@ -102,7 +102,7 @@ const GroupInfo = ({setOpenGrpInfo,closeChatView}) => {
 
     async function removeMemberHandler(userId) {
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/group/removeMember/${selectedGroup._id}/${userId}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/removeMember/${selectedGroup._id}/${userId}`,{
                 method:'get',
                 credentials:'include',
             })
@@ -128,7 +128,7 @@ const GroupInfo = ({setOpenGrpInfo,closeChatView}) => {
 
     async function toggleAdminStatus(userId) {
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/group/admin/toggle/${selectedGroup._id}/${userId}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/admin/toggle/${selectedGroup._id}/${userId}`,{
                 method:'get',
                 credentials:'include',
             })
@@ -171,7 +171,7 @@ const GroupInfo = ({setOpenGrpInfo,closeChatView}) => {
         }
 
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/group/grpPermissions/change/${selectedGroup._id}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/grpPermissions/change/${selectedGroup._id}`,{
                 method:'post',
                 credentials:'include',
                 headers: {
@@ -202,7 +202,7 @@ const GroupInfo = ({setOpenGrpInfo,closeChatView}) => {
 
     async function leaveGroupHandler() {
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/group/leave/${selectedGroup._id}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/leave/${selectedGroup._id}`,{
                 method:'get',
                 credentials:'include',
             })
@@ -229,7 +229,7 @@ const GroupInfo = ({setOpenGrpInfo,closeChatView}) => {
 
     async function deleteGroupHandler() {
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/group/delete/${selectedGroup._id}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/delete/${selectedGroup._id}`,{
                 method:'get',
                 credentials:'include',
             })

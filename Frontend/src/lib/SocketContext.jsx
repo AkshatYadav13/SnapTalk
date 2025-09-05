@@ -20,7 +20,7 @@ export const SocketProvider = ({children}) => {
 
     useEffect(() => {
         if (!socket && user?._id) {
-          const socketio = io('http://localhost:8000', {
+          const socketio = io('https://snaptalk-q73h.onrender.com', {
             query: { userId: user?._id },
             transports: ["websocket"],
           });

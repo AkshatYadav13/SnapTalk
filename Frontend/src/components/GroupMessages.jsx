@@ -48,7 +48,7 @@ const GroupMessages = ({closeChatView}) => {
   async function sendMsgHandler() {
       if(!textMsg) return
       try {
-        const res = await fetch(`http://localhost:8000/api/v1/group/msg/send/${selectedGroup._id}`,{
+        const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/msg/send/${selectedGroup._id}`,{
           method:'post',
           credentials:'include',
           body:JSON.stringify({'message':textMsg}),
@@ -76,7 +76,7 @@ const GroupMessages = ({closeChatView}) => {
 
  async function updateGrpNotifications() {
   try {
-    const res = await fetch(`http://localhost:8000/api/v1/group/notification/status/update/${selectedGroup?._id}`,{
+    const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/notification/status/update/${selectedGroup?._id}`,{
       method:'get',
       credentials:'include'
     })

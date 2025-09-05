@@ -7,7 +7,7 @@ const useGetAllPosts = ()=>{
 
     async function fetchAllPosts(){
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/post/all`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/post/all`,{
                 method:'GET',
                 credentials:'include'
             })

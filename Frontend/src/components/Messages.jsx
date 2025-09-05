@@ -32,7 +32,7 @@ const Messages = ({closeChatView}) => {
             message:textMsg
         }
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/message/send/${receiverId}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/message/send/${receiverId}`,{
                 method:'post',
                 credentials:'include',
                 body:JSON.stringify(input),

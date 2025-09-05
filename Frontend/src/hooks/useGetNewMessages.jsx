@@ -16,7 +16,7 @@ export function useGetNewMessages(){
 
     async function fetchNewMessages() {
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/message/new/all`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/message/new/all`,{
                 method:'get',
                 credentials:'include'
             })

@@ -51,7 +51,7 @@ const EditProfile = () => {
     formData.append('profilePic',input?.profilePic)
     setLoading(true)
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/user/edit/${user?._id}`,{
+      const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/user/edit/${user?._id}`,{
         method:'Post',
         credentials:'include',
         body:formData,

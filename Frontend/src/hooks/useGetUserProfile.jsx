@@ -8,7 +8,7 @@ export function useGetUserProfile(userId){
 
     async function fetchUserProfile() {
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/user/profile/${userId}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/user/profile/${userId}`,{
                 method:'get',
                 credentials:'include'
             })

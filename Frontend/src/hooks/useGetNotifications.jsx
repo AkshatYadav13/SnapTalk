@@ -8,7 +8,7 @@ export function useGetNotifications() {
 
     async function fetchNotifications(){
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/notification/get`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/notification/get`,{
                 method:'Get',
                 credentials:'include'
             })

@@ -26,7 +26,7 @@ const Login = () => {
     e.preventDefault()
     try {
       setloading(true)
-      const res = await fetch(`http://localhost:8000/api/v1/user/login`,{
+      const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/user/login`,{
         method:'POST',
         credentials:'include',
         body:JSON.stringify(input),

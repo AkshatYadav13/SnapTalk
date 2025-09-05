@@ -35,7 +35,7 @@ const Post = ({post}) => {
 
     async function deletePost(){
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/post/delete/${post._id}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/post/delete/${post._id}`,{
                 method:'GET',
                 credentials:'include'
             })
@@ -58,7 +58,7 @@ const Post = ({post}) => {
     async function likeAndDislikeHandler() {
         try {
             const action =  liked ? 'dislike': 'like'
-            const res = await fetch(`http://localhost:8000/api/v1/post/${action}/${post._id}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/post/${action}/${post._id}`,{
                 method:'get',
                 credentials:'include'
             })
@@ -94,7 +94,7 @@ const Post = ({post}) => {
             'message':text
         }
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/post/addComment/${post._id}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/post/addComment/${post._id}`,{
                 method:'POST',
                 credentials:'include',
                 body:JSON.stringify(input),
@@ -131,7 +131,7 @@ const Post = ({post}) => {
 
     async function bookmarkHandler() {
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/post/bookmark/${post._id}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/post/bookmark/${post._id}`,{
                 method:'Get',
                 credentials:'include'
             })
@@ -159,7 +159,7 @@ const Post = ({post}) => {
 
     async function followUnfollowHandler(userId) {
         try {
-          const res = await fetch(`http://localhost:8000/api/v1/user/followOrUnfollow/${userId}`,{
+          const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/user/followOrUnfollow/${userId}`,{
             method:'get',
             credentials:'include'
           })

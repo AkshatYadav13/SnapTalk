@@ -7,7 +7,7 @@ export function useGetGrpNewMsgs(){
 
     async function fetchGrpNewMsgs() {
         try {
-        const res = await fetch(`http://localhost:8000/api/v1/group/all/msgs/get/new`,{
+        const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/all/msgs/get/new`,{
             method:'get',
             credentials:'include'
         })

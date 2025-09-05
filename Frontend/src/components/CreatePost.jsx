@@ -46,7 +46,7 @@ const CreatePost = ({ open, setOpen }) => {
     if(imgPreview)  formData.append('media',file)
 
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/post/addpost`,{
+      const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/post/addpost`,{
         method:'POST',
         credentials:'include',
         body:formData

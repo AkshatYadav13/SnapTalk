@@ -12,7 +12,7 @@ export function useGetMessage(){
 
     async function fetchMessages() {
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/message/get/${selectedUser?._id}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/message/get/${selectedUser?._id}`,{
                 method:'get',
                 credentials:'include'
             })

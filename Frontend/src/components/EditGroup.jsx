@@ -63,7 +63,7 @@ const EditGroup = () => {
         input.icon && formData.append('icon',input?.icon)
         
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/group/edit/${groupId}`,{
+            const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/group/edit/${groupId}`,{
                 method:'Post',
                 credentials:'include',
                 body:formData,

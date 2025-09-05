@@ -76,7 +76,7 @@ const Profile = () => {
 
   async function followUnfollowHandler() {
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/user/followOrUnfollow/${userProfile?._id}`,{
+      const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/user/followOrUnfollow/${userProfile?._id}`,{
         method:'get',
         credentials:'include'
       })
@@ -115,7 +115,7 @@ const Profile = () => {
 
   async function sendFriendRequest() {
     try {
-        const res = await fetch(`http://localhost:8000/api/v1/notification/friendReq/send/${userProfile?._id}`,{
+        const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/notification/friendReq/send/${userProfile?._id}`,{
           method:'get',
           credentials:'include'
         })
@@ -137,7 +137,7 @@ const Profile = () => {
 
   async function removeFriend() {
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/notification/friend/remove/${userProfile._id}`,{
+      const res = await fetch(`https://snaptalk-q73h.onrender.com/api/v1/notification/friend/remove/${userProfile._id}`,{
         method:'get',
         credentials:'include'
       })
