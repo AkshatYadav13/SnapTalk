@@ -15,7 +15,7 @@ dotenv.config({});
 
 const port = process.env.PORT || 3000
 const corsOptions  = {
-    origin:'http://localhost:5173',
+    origin:process.env.URL,
     credentials:true
 }
 
